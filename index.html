@@ -5,23 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-Do</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <form class="container">
-  <header>
+  <div class="container">
+  <form class="header" id="entryForm">
         <h2>My Tasks</h2>
-        <form>
     <input type="text" id="inputTask">
-    <button class="add" id="addTask">Add</button><br><br>
-    </header>
+    <input type="submit" value="Add" class="add" id="addTask"><br><br>
+    </form>
+    
       <section>
     <input type="checkbox">Buy groceries <br>
     <input type="checkbox">Revise JavaScript<br>
-    <input type="checkbox">Check emails
+    <input type="checkbox">Check emails <br>
+     <button class="clear" id="clearTask">Clear completed</button> 
     </section>
+  </div>
+  
 
-   <button class="clear" id="clearTask">Clear completed</button> 
 
-</form>
 </body>
 </html>
